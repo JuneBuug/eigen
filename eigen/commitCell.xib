@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="commitCell" id="gTV-IL-0wX" customClass="commitCell" customModule="eigen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Arh-Ar-Vp5">
+                        <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🙌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elu-a5-Y4y">
+                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3921568627" green="0.64705882349999999" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="elu-a5-Y4y" firstAttribute="height" secondItem="Arh-Ar-Vp5" secondAttribute="height" id="Btp-II-OEE"/>
+                            <constraint firstItem="elu-a5-Y4y" firstAttribute="width" secondItem="Arh-Ar-Vp5" secondAttribute="width" id="sa5-kr-tul"/>
+                            <constraint firstItem="elu-a5-Y4y" firstAttribute="centerX" secondItem="Arh-Ar-Vp5" secondAttribute="centerX" id="yL1-iq-EYH"/>
+                            <constraint firstItem="elu-a5-Y4y" firstAttribute="centerY" secondItem="Arh-Ar-Vp5" secondAttribute="centerY" id="zb4-bF-hSk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Arh-Ar-Vp5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EgR-3G-bhm"/>
+                <constraint firstItem="Arh-Ar-Vp5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="T31-5b-K1s"/>
+                <constraint firstAttribute="bottom" secondItem="Arh-Ar-Vp5" secondAttribute="bottom" id="ky4-TJ-gfr"/>
+                <constraint firstAttribute="trailing" secondItem="Arh-Ar-Vp5" secondAttribute="trailing" id="y4X-iS-vLZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="background" destination="Arh-Ar-Vp5" id="Aya-a8-I7w"/>
+                <outlet property="emoji" destination="elu-a5-Y4y" id="HJi-TF-CVh"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
