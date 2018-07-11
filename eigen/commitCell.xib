@@ -22,20 +22,15 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Arh-Ar-Vp5">
                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🙌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elu-a5-Y4y">
+                            <textField opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="🙂" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="QCZ-xW-RRH">
                                 <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="yes" keyboardType="twitter" returnKeyType="done"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.3921568627" green="0.64705882349999999" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="elu-a5-Y4y" firstAttribute="height" secondItem="Arh-Ar-Vp5" secondAttribute="height" id="Btp-II-OEE"/>
-                            <constraint firstItem="elu-a5-Y4y" firstAttribute="width" secondItem="Arh-Ar-Vp5" secondAttribute="width" id="sa5-kr-tul"/>
-                            <constraint firstItem="elu-a5-Y4y" firstAttribute="centerX" secondItem="Arh-Ar-Vp5" secondAttribute="centerX" id="yL1-iq-EYH"/>
-                            <constraint firstItem="elu-a5-Y4y" firstAttribute="centerY" secondItem="Arh-Ar-Vp5" secondAttribute="centerY" id="zb4-bF-hSk"/>
-                        </constraints>
                     </view>
                 </subviews>
             </view>
@@ -48,7 +43,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
                 <outlet property="background" destination="Arh-Ar-Vp5" id="Aya-a8-I7w"/>
-                <outlet property="emoji" destination="elu-a5-Y4y" id="HJi-TF-CVh"/>
+                <outlet property="emoji" destination="QCZ-xW-RRH" id="6bQ-Ig-gHC"/>
             </connections>
         </collectionViewCell>
     </objects>
