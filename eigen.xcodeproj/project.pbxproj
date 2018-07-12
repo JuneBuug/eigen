@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0E18E03320F72CEB007B83DE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E18E03220F72CEB007B83DE /* Data.swift */; };
 		0E3945A020F732EB00A62884 /* TodoWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E39459F20F732EB00A62884 /* TodoWriteViewController.swift */; };
+		0E3945A220F73B9A00A62884 /* commitCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E3945A120F73B9A00A62884 /* commitCollection.xib */; };
+		0E3945A420F73E5700A62884 /* commitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3945A320F73E5700A62884 /* commitCollection.swift */; };
 		0E7B535F20F696B4003C0D79 /* commitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B535D20F696B4003C0D79 /* commitCell.swift */; };
 		0E7B536020F696B4003C0D79 /* commitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E7B535E20F696B4003C0D79 /* commitCell.xib */; };
 		0EE158BE20F65D7E008307EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE158BD20F65D7E008307EB /* AppDelegate.swift */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		0E18E03220F72CEB007B83DE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		0E39459F20F732EB00A62884 /* TodoWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoWriteViewController.swift; sourceTree = "<group>"; };
+		0E3945A120F73B9A00A62884 /* commitCollection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = commitCollection.xib; sourceTree = "<group>"; };
+		0E3945A320F73E5700A62884 /* commitCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commitCollection.swift; sourceTree = "<group>"; };
 		0E7B535D20F696B4003C0D79 /* commitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commitCell.swift; sourceTree = "<group>"; };
 		0E7B535E20F696B4003C0D79 /* commitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = commitCell.xib; sourceTree = "<group>"; };
 		0EE158BA20F65D7E008307EB /* eigen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eigen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +89,8 @@
 				0E7B535E20F696B4003C0D79 /* commitCell.xib */,
 				0E18E03220F72CEB007B83DE /* Data.swift */,
 				0E39459F20F732EB00A62884 /* TodoWriteViewController.swift */,
+				0E3945A120F73B9A00A62884 /* commitCollection.xib */,
+				0E3945A320F73E5700A62884 /* commitCollection.swift */,
 			);
 			path = eigen;
 			sourceTree = "<group>";
@@ -168,6 +174,7 @@
 			files = (
 				0EE158C820F65D80008307EB /* LaunchScreen.storyboard in Resources */,
 				0E7B536020F696B4003C0D79 /* commitCell.xib in Resources */,
+				0E3945A220F73B9A00A62884 /* commitCollection.xib in Resources */,
 				0EE158C520F65D80008307EB /* Assets.xcassets in Resources */,
 				0EE158C320F65D7F008307EB /* Main.storyboard in Resources */,
 				0EE158D620F66874008307EB /* todoCellTableViewCell.xib in Resources */,
@@ -227,6 +234,7 @@
 				0E18E03320F72CEB007B83DE /* Data.swift in Sources */,
 				0EE158C020F65D7F008307EB /* ViewController.swift in Sources */,
 				0EE158BE20F65D7E008307EB /* AppDelegate.swift in Sources */,
+				0E3945A420F73E5700A62884 /* commitCollection.swift in Sources */,
 				0EE158D520F66874008307EB /* todoCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

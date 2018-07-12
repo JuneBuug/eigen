@@ -22,7 +22,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Arh-Ar-Vp5">
                         <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="🙂" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="QCZ-xW-RRH">
+                            <textField opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="QCZ-xW-RRH">
                                 <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>

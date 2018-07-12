@@ -16,24 +16,21 @@ class ViewController: UIViewController{
     var emojis = ["","","","🙂","","✅","✨"]
     
     @IBOutlet weak var todoTable: UITableView!
-    @IBOutlet weak var collectionView: UICollectionView!
     var todos : Results<Todo>!
+    var headerHeight : CGFloat = 212.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         todoTable.delegate = self
         todoTable.dataSource = self
 //        todoTable.isEditing = true
-        collectionView.delegate = self
-        collectionView.dataSource = self
         let nibName = UINib(nibName: "todoCellTableViewCell", bundle: nil)
         let nibCell = UINib(nibName: "commitCell", bundle: nil)
         let realm = try! Realm()
         todos = realm.objects(Todo.self)
         todoTable.register(nibName, forCellReuseIdentifier: "todoCellTableViewCell")
-        collectionView.register(nibCell, forCellWithReuseIdentifier: "commitCell")
+     
         
-       
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -45,8 +42,8 @@ class ViewController: UIViewController{
     @IBAction func onAdd(_ sender: Any) {
     }
     
+    
 }
-
 
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource{
@@ -95,34 +92,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
         return false
     }
-
     
-    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return commitCollection.instanceFromNib()
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 220.0
+    }
 }
 
-extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate{
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 42
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "commitCell", for: indexPath) as! commitCell
-        
-        cell.emoji.text = emojis[(indexPath.row * 2 ) % 7]
-        if indexPath.row % 4 == 0 {
-            cell.background.backgroundColor = UIColor(red: 211.0/255.0, green: 214.0/255.0, blue: 245.0/255.0, alpha: 1.0)
-        }
-        else if indexPath.row % 4 == 1 {
-            cell.background.backgroundColor = UIColor(red: 239.0/255.0, green: 239.0/255.0, blue: 239.0/255.0, alpha: 1.0)
-        }
-        else if indexPath.row % 4 == 2 {
-            cell.background.backgroundColor = UIColor(red: 148.0/255.0, green: 191.0/255.0, blue: 240.0/255.0, alpha: 1.0)
-        }
-        else{
-            cell.background.backgroundColor = UIColor(red: 100.0/255.0, green: 165.0/255.0, blue: 241.0/255.0, alpha: 1.0)
-        }
-    
-        return cell
-    }
-    
-}
