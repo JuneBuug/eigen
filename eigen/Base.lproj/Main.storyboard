@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,6 +43,7 @@
                                 <state key="normal" image="ic_add"/>
                                 <connections>
                                     <action selector="onAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jjY-eD-lgI"/>
+                                    <segue destination="LTy-AI-kYq" kind="presentation" id="fjR-dn-a2N"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ONG-BF-f8s">
@@ -93,6 +95,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+        <!--Todo Write View Controller-->
+        <scene sceneID="PA0-S3-Yea">
+            <objects>
+                <viewController id="LTy-AI-kYq" customClass="TodoWriteViewController" customModule="eigen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ina-dc-POM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LSH-eD-87P">
+                                <rect key="frame" x="0.0" y="58" width="375" height="66.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzH-ey-pAx">
+                                <rect key="frame" x="157" y="156.5" width="60" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="ati-fA-xkU"/>
+                                    <constraint firstAttribute="width" constant="60" id="pAn-0s-2oH"/>
+                                </constraints>
+                                <state key="normal" title="작성완료" image="ic_add"/>
+                                <connections>
+                                    <action selector="onClickAdd:" destination="LTy-AI-kYq" eventType="touchUpInside" id="jbN-0W-fBt"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Cmi-GJ-ycT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.99607843139999996" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LSH-eD-87P" firstAttribute="centerX" secondItem="wem-Md-MP1" secondAttribute="centerX" id="IBB-hq-A5X"/>
+                            <constraint firstItem="LSH-eD-87P" firstAttribute="width" secondItem="Ina-dc-POM" secondAttribute="width" id="XxW-03-BxP"/>
+                            <constraint firstItem="KzH-ey-pAx" firstAttribute="top" secondItem="LSH-eD-87P" secondAttribute="bottom" constant="32" id="lXX-Eo-chZ"/>
+                            <constraint firstItem="LSH-eD-87P" firstAttribute="top" secondItem="wem-Md-MP1" secondAttribute="top" constant="38" id="sti-4G-oVQ"/>
+                            <constraint firstItem="LSH-eD-87P" firstAttribute="height" secondItem="Ina-dc-POM" secondAttribute="height" multiplier="1/10" id="w1g-kS-EV3"/>
+                            <constraint firstItem="KzH-ey-pAx" firstAttribute="centerX" secondItem="wem-Md-MP1" secondAttribute="centerX" id="zWO-yy-M0R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wem-Md-MP1"/>
+                    </view>
+                    <connections>
+                        <outlet property="text" destination="LSH-eD-87P" id="ffF-HP-XKk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E0c-KC-Kes" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664.79999999999995" y="31.934032983508249"/>
         </scene>
     </scenes>
     <resources>

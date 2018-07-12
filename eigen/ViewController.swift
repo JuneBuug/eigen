@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import RealmSwift
+import Realm
 
 class ViewController: UIViewController{
 
     var titles = ["요가하기","양파요리하기","개발하기"]
     var emojis = ["","","","🙂","","✅","✨"]
-
+    
     @IBOutlet weak var todoTable: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
+    var todos : Results<Todo>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +28,12 @@ class ViewController: UIViewController{
         collectionView.dataSource = self
         let nibName = UINib(nibName: "todoCellTableViewCell", bundle: nil)
         let nibCell = UINib(nibName: "commitCell", bundle: nil)
-        
+        let realm = try! Realm()
+        todos = realm.objects(Todo.self)
         todoTable.register(nibName, forCellReuseIdentifier: "todoCellTableViewCell")
         collectionView.register(nibCell, forCellWithReuseIdentifier: "commitCell")
+        
+       
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -45,13 +51,22 @@ class ViewController: UIViewController{
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        if todos.count <= 0{
+            return 3
+        }else{
+            return todos.count
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "todoCellTableViewCell", for: indexPath) as! todoCellTableViewCell
         
-        cell.title.text = titles[indexPath.row]
+        if todos.count <= 0{
+            cell.title.text = titles[indexPath.row]
+        }else{
+            cell.title.text = todos[indexPath.row].title
+        }
         return cell
     }
     
@@ -64,9 +79,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        let movedObject = self.titles[sourceIndexPath.row]
-        titles.remove(at: sourceIndexPath.row)
-        titles.insert(movedObject, at: destinationIndexPath.row)
+        if todos.count <= 0{
+            let movedObject = self.titles[sourceIndexPath.row]
+            titles.remove(at: sourceIndexPath.row)
+            titles.insert(movedObject, at: destinationIndexPath.row)
+        }else{
+//         Realm 삭제해야함
+        }
     }
     
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
