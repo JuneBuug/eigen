@@ -11,6 +11,7 @@ import RealmSwift
 class TodoWriteViewController: UIViewController {
 
     @IBOutlet weak var text: UITextField!
+    let realm = try! Realm()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,15 +26,12 @@ class TodoWriteViewController: UIViewController {
     @IBAction func onClickAdd(_ sender: Any) {
         let todo = Todo()
         todo.title = text.text ?? ""
-        
-        // Get the default Realm
-        let realm = try! Realm()
-        // You only need to do this once (per thread)
-        
-        // Add to the Realm inside a transaction
-        try! realm.write {
-            realm.add(todo)
-        }
+        print(todo.title)
+//        if todo.title != "" {
+//            try! realm.write {
+//                realm.add(todo)
+//            }
+//        }
     }
     
     /*

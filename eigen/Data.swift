@@ -13,7 +13,11 @@ import RealmSwift
 class Todo: Object{
     @objc dynamic var title=""
     @objc dynamic var done_cnt = 0;
-    daynamic 
+    @objc dynamic var id = 0;
+    override static func primaryKey() -> String?{
+        return "id"
+    }
+    
     let days = LinkingObjects(fromType: Day.self, property: "todos")
 }
 

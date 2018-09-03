@@ -53,7 +53,7 @@
                         </constraints>
                         <state key="normal" image="ic_done"/>
                         <connections>
-                            <action selector="onTouchDone:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jFT-w1-xnL"/>
+                            <action selector="onTouchDone:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AAB-p6-YlF"/>
                         </connections>
                     </button>
                 </subviews>
@@ -75,6 +75,7 @@
             <connections>
                 <outlet property="background" destination="H2p-sc-9uM" id="u79-ZN-bGO"/>
                 <outlet property="bg" destination="Yq8-h1-nyy" id="YiW-bH-NEQ"/>
+                <outlet property="doneBtn" destination="EBH-Fj-cMW" id="Nww-ga-3WV"/>
                 <outlet property="times" destination="4R0-98-nVn" id="wsQ-cW-urX"/>
                 <outlet property="title" destination="ePg-BB-ine" id="8HP-50-0iu"/>
             </connections>
