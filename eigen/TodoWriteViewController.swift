@@ -27,11 +27,12 @@ class TodoWriteViewController: UIViewController {
         let todo = Todo()
         todo.title = text.text ?? ""
         print(todo.title)
-//        if todo.title != "" {
-//            try! realm.write {
-//                realm.add(todo)
-//            }
-//        }
+        if todo.title != "" {
+            try! realm.write {
+                realm.add(todo,update:true)
+            }
+        }
+
     }
     
     /*

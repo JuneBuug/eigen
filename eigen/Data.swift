@@ -13,7 +13,7 @@ import RealmSwift
 class Todo: Object{
     @objc dynamic var title=""
     @objc dynamic var done_cnt = 0;
-    @objc dynamic var id = 0;
+    @objc dynamic var id = UUID().uuidString;
     override static func primaryKey() -> String?{
         return "id"
     }

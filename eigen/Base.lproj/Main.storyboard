@@ -90,7 +90,7 @@
                                 <state key="normal" title="작성완료" image="ic_add"/>
                                 <connections>
                                     <action selector="onClickAdd:" destination="LTy-AI-kYq" eventType="touchUpInside" id="jbN-0W-fBt"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Cmi-GJ-ycT"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Wvb-7n-vrG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -111,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E0c-KC-Kes" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="664.79999999999995" y="31.934032983508249"/>
+            <point key="canvasLocation" x="1017" y="12"/>
         </scene>
     </scenes>
     <resources>
