@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -25,8 +25,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="321" height="105.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일기쓰기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePg-BB-ine" customClass="todo">
-                        <rect key="frame" x="40" y="42" width="70" height="24"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ㅁㅇㄴ힘넝하ㅣㅓㅁㄴ아ㅣ허민아허ㅏㅣㄴㅇㅎ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePg-BB-ine" customClass="todo">
+                        <rect key="frame" x="40" y="42" width="166" height="24"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="24" id="LeT-6H-vdL"/>
                         </constraints>
@@ -64,6 +64,7 @@
                     <constraint firstItem="4R0-98-nVn" firstAttribute="top" secondItem="ePg-BB-ine" secondAttribute="bottom" constant="8" id="SCt-Ak-wk3"/>
                     <constraint firstItem="ePg-BB-ine" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SeT-SB-lxA"/>
                     <constraint firstItem="EBH-Fj-cMW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Vo0-Aj-icY"/>
+                    <constraint firstItem="EBH-Fj-cMW" firstAttribute="leading" secondItem="ePg-BB-ine" secondAttribute="trailing" constant="8" id="ark-Fi-kJk"/>
                     <constraint firstAttribute="trailing" secondItem="EBH-Fj-cMW" secondAttribute="trailing" constant="16" id="d5n-st-awr"/>
                     <constraint firstItem="Yq8-h1-nyy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jho-ri-sD1"/>
                     <constraint firstItem="Yq8-h1-nyy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="shy-89-sHj"/>

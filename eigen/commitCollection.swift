@@ -16,7 +16,7 @@ class commitCollection: UIView,UICollectionViewDataSource,UICollectionViewDelega
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        backgroundColor = UIColor.clear
+        collectionView.backgroundColor = UIColor.clear
         
         let nibCell = UINib(nibName: "commitCell", bundle: nil)
         collectionView.register(nibCell, forCellWithReuseIdentifier: "commitCell")
@@ -37,16 +37,16 @@ class commitCollection: UIView,UICollectionViewDataSource,UICollectionViewDelega
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "commitCell", for: indexPath) as! commitCell
         
         if indexPath.row % 4 == 0 {
-            cell.background.backgroundColor = UIColor(red: 211.0/255.0, green: 214.0/255.0, blue: 245.0/255.0, alpha: 1.0)
+            cell.background.backgroundColor = UIColor.serenityBlue
         }
         else if indexPath.row % 4 == 1 {
-            cell.background.backgroundColor = UIColor(red: 239.0/255.0, green: 239.0/255.0, blue: 239.0/255.0, alpha: 1.0)
+            cell.background.backgroundColor = UIColor.purple001
         }
         else if indexPath.row % 4 == 2 {
-            cell.background.backgroundColor = UIColor(red: 148.0/255.0, green: 191.0/255.0, blue: 240.0/255.0, alpha: 1.0)
+            cell.background.backgroundColor = UIColor.blue001
         }
         else{
-            cell.background.backgroundColor = UIColor(red: 100.0/255.0, green: 165.0/255.0, blue: 241.0/255.0, alpha: 1.0)
+            cell.background.backgroundColor = UIColor.blue100
         }
         
         return cell

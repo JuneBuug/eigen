@@ -64,6 +64,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         }else{
             cell.title.text = todos[indexPath.row].title
         }
+        
+        let done_cnt = todos[indexPath.row].done_cnt
+        if done_cnt > 1 {
+            cell.times.text = "have done " + String(done_cnt) + "times."
+        }else if done_cnt == 1 {
+            cell.times.text = "have done " + String(done_cnt) + "time."
+        }else{
+            cell.times.text = "Go Get This CHANCE!"
+        }
         return cell
     }
     

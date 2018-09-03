@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E18E03320F72CEB007B83DE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E18E03220F72CEB007B83DE /* Data.swift */; };
+		0E1915EA213D6C8D00E52066 /* Colorextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1915E9213D6C8D00E52066 /* Colorextension.swift */; };
 		0E3945A020F732EB00A62884 /* TodoWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E39459F20F732EB00A62884 /* TodoWriteViewController.swift */; };
 		0E3945A220F73B9A00A62884 /* commitCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E3945A120F73B9A00A62884 /* commitCollection.xib */; };
 		0E3945A420F73E5700A62884 /* commitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3945A320F73E5700A62884 /* commitCollection.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		0E18E03220F72CEB007B83DE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		0E1915E9213D6C8D00E52066 /* Colorextension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorextension.swift; sourceTree = "<group>"; };
 		0E39459F20F732EB00A62884 /* TodoWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoWriteViewController.swift; sourceTree = "<group>"; };
 		0E3945A120F73B9A00A62884 /* commitCollection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = commitCollection.xib; sourceTree = "<group>"; };
 		0E3945A320F73E5700A62884 /* commitCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commitCollection.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				0E39459F20F732EB00A62884 /* TodoWriteViewController.swift */,
 				0E3945A120F73B9A00A62884 /* commitCollection.xib */,
 				0E3945A320F73E5700A62884 /* commitCollection.swift */,
+				0E1915E9213D6C8D00E52066 /* Colorextension.swift */,
 			);
 			path = eigen;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				0E3945A020F732EB00A62884 /* TodoWriteViewController.swift in Sources */,
 				0E7B535F20F696B4003C0D79 /* commitCell.swift in Sources */,
 				0E18E03320F72CEB007B83DE /* Data.swift in Sources */,
+				0E1915EA213D6C8D00E52066 /* Colorextension.swift in Sources */,
 				0EE158C020F65D7F008307EB /* ViewController.swift in Sources */,
 				0EE158BE20F65D7E008307EB /* AppDelegate.swift in Sources */,
 				0E3945A420F73E5700A62884 /* commitCollection.swift in Sources */,

@@ -13,6 +13,7 @@ import RealmSwift
 class Todo: Object{
     @objc dynamic var title=""
     @objc dynamic var done_cnt = 0;
+    daynamic 
     let days = LinkingObjects(fromType: Day.self, property: "todos")
 }
 
